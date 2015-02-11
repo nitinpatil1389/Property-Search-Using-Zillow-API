@@ -1,0 +1,128 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Home Work 8</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/myWebTech8zilloApp_display_view.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<h3 class="my-text-color header">Search Your Property Here</h3>
+			<form name="realEstateSearch" class="form-horizontal">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-4">
+						<div class="form-group">
+							<label for="streetAddress" class="col-lg-5 control-label" style="color: rgb(235, 150, 30);">Street Address*:</label>
+							<div class="col-lg-7">
+								<input type="text" name="streetAddress" id="streetAddress" placeholder="Address" class="form-control"/>
+								<span class="help-block" id="streetAddressMsg">This field is required.</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-3">
+						<div class="form-group">
+							<label for="city" class="col-lg-2 control-label" style="color: rgb(235, 150, 30);">City*:</label>
+							<div class="col-lg-10">
+								<input type="text" name="city" id="city" placeholder="City" class="form-control"/>
+								<span class="help-block" id="cityMsg">This field is required.</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-2">
+						<div class="form-group">
+							<label for="state" class="col-lg-4 control-label" style="color: rgb(235, 150, 30);">State*:</label>
+							<div class="col-lg-8">
+								<select name="state" id="state" class="form-control">
+									<option value=""></option>
+									<option value="AK">AK</option>
+
+									<option value="AL">AL</option>
+									<option value="AR">AR</option>
+									<option value="AZ">AZ</option>
+									<option value="CA">CA</option>
+
+									<option value="CO">CO</option>
+									<option value="CT">CT</option>
+									<option value="DC">DC</option>
+									<option value="DE">DE</option>
+
+									<option value="FL">FL</option>
+									<option value="GA">GA</option>
+									<option value="HI">HI</option>
+									<option value="IA">IA</option>
+
+									<option value="ID">ID</option>
+									<option value="IL">IL</option>
+									<option value="IN">IN</option>
+									<option value="KS">KS</option>
+
+									<option value="KY">KY</option>
+									<option value="LA">LA</option>
+									<option value="MA">MA</option>
+									<option value="MD">MD</option>
+
+									<option value="ME">ME</option>
+									<option value="MI">MI</option>
+									<option value="MN">MN</option>
+									<option value="MO">MO</option>
+
+									<option value="MS">MS</option>
+									<option value="MT">MT</option>
+									<option value="NC">NC</option>
+									<option value="ND">ND</option>
+
+									<option value="NE">NE</option>
+									<option value="NH">NH</option>
+									<option value="NJ">NJ</option>
+									<option value="NM">NM</option>
+
+									<option value="NV">NV</option>
+									<option value="NY">NY</option>
+									<option value="OH">OH</option>
+									<option value="OK">OK</option>
+
+									<option value="OR">OR</option>
+									<option value="PA">PA</option>
+									<option value="RI">RI</option>
+									<option value="SC">SC</option>
+
+									<option value="SD">SD</option>
+									<option value="TN">TN</option>
+									<option value="TX">TX</option>
+									<option value="UT">UT</option>
+
+									<option value="VA">VA</option>
+									<option value="VT">VT</option>
+									<option value="WA">WA</option>
+									<option value="WI">WI</option>
+
+									<option value="WV">WV</option>
+									<option value="WY">WY</option>
+								</select>
+								<span class="help-block" id="stateMsg">This field is required.</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-2">
+						<div class="form-group col-lg-12">
+							<input type="button" value="Submit" name="submit" id="submit" class="btn btn-warning"/>
+							<span class="help-block">Dummy field used for alignment.</span>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-1">
+						<img src="http://www.zillow.com/widgets/GetVersionedResource.htm?path=/static/logos/Zillowlogo_150x40.gif" width="150" height="40" alt="Zillow Real Estate Search" class="img-rounded pull-right"/>
+					</div>
+				</div><!--div class="row"-->
+			</form>
+			<!--p style="font-style: italic;">* - Mandatory fields.</p-->
+			<hr/>
+			<div id="content">
+			</div>
+		</div>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/myWebTech8zilloApp_validation_controller.js"></script>
+		<script type="text/javascript" src="js/myWebTech8zilloApp_resultsTable_view.js"></script>
+		<script type="text/javascript" src="js/myWebTech8zilloApp_fb_controller.js"></script>
+	</body>
+</html>

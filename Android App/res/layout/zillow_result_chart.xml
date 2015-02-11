@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextSwitcher
+        android:id="@+id/chartCaptionTextSwitcher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp" >
+
+    </TextSwitcher>
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chartCaptionTextSwitcher"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp" />
+
+    <ImageSwitcher
+        android:id="@+id/chartsImageSwitcher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chartCaptionTextSwitcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" >
+
+    </ImageSwitcher>
+
+    <LinearLayout
+        android:id="@+id/buttonsHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chartsImageSwitcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" >
+
+        <Button
+            android:id="@+id/prevButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/prev_button" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/next_button" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/footerTextView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonsHolder"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/footerTextView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/footerTextView1"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/footerTextView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/footerTextView2"
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.example.csci571homework9.MainActivity" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+    <TextView
+        android:id="@+id/textViewHeading"
+        style="@style/headerText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_heading"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewAddress"
+        style="@style/labelText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/address_label" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        style="@style/inputTextBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/address_placeholder" />
+
+    <TextView
+        android:id="@+id/textViewAddressError"
+        style="@style/reqFieldErrMsg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reqFieldErrMsg"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewCity"
+        style="@style/labelText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/city_label" />
+
+    <EditText
+        android:id="@+id/editTextCity"
+        style="@style/inputTextBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/city_placeholder" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewCityError"
+        style="@style/reqFieldErrMsg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reqFieldErrMsg"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewState"
+        style="@style/labelText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/state_label" />
+
+    <Spinner
+        android:id="@+id/spinnerState"
+        style="@style/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/state_list"
+        android:prompt="@string/state_placeholder" />
+
+    <TextView
+        android:id="@+id/textViewStateError"
+        style="@style/reqFieldErrMsg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:text="@string/reqFieldErrMsg"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        style="@style/labelText">
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_button_label" 
+            android:onClick="onSubmit" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/zillow_label"
+            android:scaleType="fitEnd"
+            android:src="@drawable/zillow_logo" />
+
+    </LinearLayout>
+    
+    <View
+	    android:layout_width="fill_parent"
+	    android:layout_height="2dp"
+	    android:background="#FFFFFF"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/textViewZillowError"
+        style="@style/zillowErrorText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/zillowErrorMsg"
+        android:visibility="invisible" />
+    
+        </LinearLayout>
+    </ScrollView>
